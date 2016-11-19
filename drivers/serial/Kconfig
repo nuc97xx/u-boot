@@ -407,4 +407,10 @@ config MSM_SERIAL
 	  for example APQ8016 and MSM8916.
 	  Single baudrate is supported in current implementation (115200).
 
+config NUC970_SERIAL
+    bool "Support nuc97xx serial"
+    depends on DM_SERIAL
+    help
+      Support nuc97xx serial
+
 endmenu

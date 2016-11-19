@@ -142,4 +142,9 @@ config SPL_NAND_DENALI
 
 endif
 
+config NAND_NUC97XX
+    bool "Support nuc97xx nand"
+    help
+      Support nuc97xx nand
+
 endmenu

@@ -873,6 +873,11 @@ config TARGET_THUNDERX_88XX
 	select OF_CONTROL
 	select SYS_CACHE_SHIFT_7
 
+config TARGET_NUC97XX
+	bool "Support nuc97xx"
+	select CPU_ARM926EJS
+	select SUPPORT_SPL
+
 endchoice
 
 source "arch/arm/mach-at91/Kconfig"
@@ -1020,6 +1025,7 @@ source "board/vscom/baltos/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
 source "board/zipitz2/Kconfig"
+source "board/nuvoton/nuc97xx/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 
