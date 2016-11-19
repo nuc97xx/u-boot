@@ -1,0 +1,20 @@
+
+#SPDX-License-Identifier: GPL-2.0+
+
+
+#if TARGET_NUC97XX
+
+config SYS_BOARD
+    default "nuc97xx"
+
+config SYS_VENDOR
+    default "nuvoton"
+
+config SYS_SOC
+    default "nuc97xx"
+
+config SYS_CONFIG_NAME
+    default "nuc97xx"
+
+#endif
+
