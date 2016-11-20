@@ -193,14 +193,17 @@ static int nuc970_serial_probe(struct udevice *dev)
     return 0;
 }
 
+static const struct udevice_id nuc970_serial_ids[] = {
+    { .compatible = "actions,nuc970_serial", },
+    { }
+};
+
 U_BOOT_DRIVER(nuc970_serial) = {
 	.name = "nuc970_serial",
 	.id = UCLASS_SERIAL,
 	.ops = &nuc970_serial_ops,
+	.of_match = nuc970_serial_ids,
 	.probe = nuc970_serial_probe,
 	.flags = DM_FLAG_PRE_RELOC,
 };
 
-U_BOOT_DEVICE(stm32_serials) = {
-	.name = "nuc970_serial",
-};

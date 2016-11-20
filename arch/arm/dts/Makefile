@@ -296,6 +296,9 @@ dtb-$(CONFIG_SOC_KEYSTONE) += k2hk-evm.dtb \
 dtb-$(CONFIG_TARGET_SAMA5D2_XPLAINED) += \
 	at91-sama5d2_xplained.dtb
 
+dtb-$(CONFIG_TARGET_NUC97XX) += \
+    nuc97xx.dtb
+
 targets += $(dtb-y)
 
 # Add any required device tree compiler flags here
